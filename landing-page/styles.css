@@ -1,0 +1,42 @@
+.top{
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+a {
+    color: #f9faf8
+}
+
+#logo {
+    width: 25%;
+    height: auto;
+  }
+
+#header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content {
+    display: flex;
+}
+
+
+#footer {
+    display: flex;
+    justify-content: center;
+}
