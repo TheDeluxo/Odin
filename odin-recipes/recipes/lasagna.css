@@ -1,0 +1,10 @@
+* {
+  outline: 2px solid red;
+}
+
+p {
+    color: white;
+    background-color: black;
+    padding: auto;
+    font-weight: bold;
+  }

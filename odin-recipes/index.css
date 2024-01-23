@@ -1,0 +1,16 @@
+* {
+    color: purple;
+    font-weight: bold;
+    background-color:aqua;
+    border: ;
+
+  }
+
+ul {
+  margin-top: 20px;
+  /*list-style-type: lower-alpha;*/
+  /*list-style-type:georgian;*/
+  /*list-style-type: disc;*/
+  list-style-type: '🐣';
+  padding-left: 10;
+}
