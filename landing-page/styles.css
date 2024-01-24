@@ -1,23 +1,38 @@
+body {
+    margin: auto;
+}
+
+* {
+    outline: 2px solid red;
+  }
+
 .top{
+    padding: 20px;
     background-color: #1f2937;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* align-items:center; */
+    /* align-content: space-around; */
+    /* justify-content: space-evenly; */
+
 }
 
 a {
-    color: #f9faf8
+    color: #f9faf8;
+    text-decoration: none;
 }
 
 #logo {
-    width: 25%;
-    height: auto;
+    max-width: 50%;
+    max-height: 50%;
   }
 
 #header {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* align-items:center; */
+    /* align-content: space-around; */
 }
 
 .header-list {
