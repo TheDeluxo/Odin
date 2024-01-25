@@ -2,48 +2,58 @@ body {
     margin: auto;
 }
 
-* {
-    outline: 2px solid red;
-  }
-
-.top{
-    padding: 20px;
-    background-color: #1f2937;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    /* align-items:center; */
-    /* align-content: space-around; */
-    /* justify-content: space-evenly; */
-
-}
+/* * {
+    outline: 1px solid red;
+} */
 
 a {
     color: #f9faf8;
     text-decoration: none;
 }
 
-#logo {
-    max-width: 50%;
-    max-height: 50%;
+.card {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
   }
 
 #header {
+    padding: 20px 20%;
+    background-color: #1f2937;
+    color: white;
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items:center; */
-    /* align-content: space-around; */
+    justify-content: space-between;
 }
+
+#logo {
+    max-width: 10%;
+    max-height: 10%;
+  }
 
 .header-list {
     list-style-type: none;
     display: flex;
+    align-content: center;
     gap: 2rem;
 }
 
-.mid {
+.placeholder{
     display: flex;
-    justify-content: space-around;
+}
+
+.mid {
+    padding: 80px 20%;
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-content {
