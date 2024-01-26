@@ -46,18 +46,31 @@ a {
 
 .placeholder{
     display: flex;
+    width: 400px;
+    height: 200px;
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
 }
 
+.left {
+    /* display: flex; */
+
+}
 .mid {
     padding: 80px 20%;
     background-color: #1f2937;
     color: white;
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
+    /* align-content: space-between; */
 }
 
 .main-content {
     display: flex;
+    justify-content: space-between;
+
 }
 
 
