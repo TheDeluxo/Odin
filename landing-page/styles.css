@@ -46,16 +46,28 @@ a {
 
 .placeholder{
     display: flex;
-    width: 400px;
+    width: 200px;
     height: 200px;
     max-width: 70%;
     align-items: center;
     justify-content: center;
 }
 
-.left {
-    /* display: flex; */
+#left {
+    display: flex;
+    flex-direction: column;
+}
 
+.btn{
+    background-color: #3882F6;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    align-self: flex-start;
+    margin: 10px;
+    /* align-items: flex-start; */
 }
 .mid {
     padding: 80px 20%;
@@ -70,9 +82,22 @@ a {
 .main-content {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 
 }
 
+cards-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-content: space-around;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
 
 #footer {
     display: flex;
