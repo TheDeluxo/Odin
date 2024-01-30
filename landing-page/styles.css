@@ -1,10 +1,15 @@
 body {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: space-evenly;
+    align-content: space-around;
 }
 
-/* * {
+* {
     outline: 1px solid red;
-} */
+}
 
 a {
     color: #f9faf8;
@@ -25,11 +30,12 @@ a {
   }
 
 #header {
-    padding: 20px 20%;
+    padding: 10px 10%;
     background-color: #1f2937;
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
@@ -45,17 +51,25 @@ a {
 }
 
 .placeholder{
-    display: flex;
-    width: 200px;
+    /* margin: 10%; */
     height: 200px;
-    max-width: 70%;
+    width: 600px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #6d747d;
+    border-style: none;
+    box-shadow: none;
 }
 
 #left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+#card_head {
+    margin: 0;
 }
 
 .btn{
@@ -66,40 +80,82 @@ a {
     padding: 5px 15px 5px 15px;
     display: flex;
     align-self: flex-start;
-    margin: 10px;
+    /* margin: 10px; */
     /* align-items: flex-start; */
 }
 .mid {
-    padding: 80px 20%;
+    padding: 20px 10%;
     background-color: #1f2937;
     color: white;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center; 
     /* align-items: center; */
     /* align-content: space-between; */
 }
 
 .main-content {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
+    flex-direction: column;
+    align-items: center;
 }
 
-cards-container{
+.cards-container{
+    padding: auto;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-content: space-around;
+    /* justify-content: space-around; */
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 10px  5%;
+}
+
+.card{
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #3882F6;
+    box-shadow: none;
+    aspect-ratio: 1/1;
+    max-width: 60%;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-wrap: wrap;
+    align-items: center;
 }
 
 .quote{
     display: flex;
+    background-color: #e5e7eb;
     flex-direction: column;
-    align-content: flex-end;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
 }
 
+.quote_main{
+    text-align: center;
+
+}
+
+.quote_auth{
+    text-align: end;
+    font-weight: 900;
+    align-self: flex-end;
+}
+
+.
 #footer {
     display: flex;
     justify-content: center;
+    padding: 20px 20%;
+    background-color: #1f2937;
+    color: white;
 }
