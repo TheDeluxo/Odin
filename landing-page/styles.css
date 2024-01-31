@@ -2,14 +2,12 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    flex: auto;
-    justify-content: space-evenly;
     align-content: space-around;
 }
 
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 a {
     color: #f9faf8;
@@ -51,7 +49,7 @@ a {
 }
 
 .placeholder{
-    /* margin: 10%; */
+    margin-left: 30px;
     height: 200px;
     width: 600px;
     display: flex;
@@ -62,14 +60,26 @@ a {
     box-shadow: none;
 }
 
-#left {
+.mid {
+    padding: 20px 10%;
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center; 
+    /* align-items: center; */
+    /* align-content: space-between; */
+}
+
+.left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 10px 10px;
+    justify-content:flex-start;
 }
 
 #card_head {
-    margin: 0;
+    font-size: 48px;
 }
 
 .btn{
@@ -83,16 +93,6 @@ a {
     /* margin: 10px; */
     /* align-items: flex-start; */
 }
-.mid {
-    padding: 20px 10%;
-    background-color: #1f2937;
-    color: white;
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center; 
-    /* align-items: center; */
-    /* align-content: space-between; */
-}
 
 .main-content {
     display: flex;
@@ -105,8 +105,8 @@ a {
     display: flex;
     /* justify-content: space-around; */
     align-content: space-between;
-    justify-content: space-between;
-    padding: 10px  5%;
+    justify-content: space-around;
+    padding: 10px 5%;
 }
 
 .card{
@@ -132,26 +132,56 @@ a {
 .quote{
     display: flex;
     background-color: #e5e7eb;
-    flex-direction: column;
     height: 30vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-items: center;
-    padding: 20px;
 }
 
-.quote_main{
-    text-align: center;
-
+#qt{
+    font-style: italic;
+    font-size: 36px;
 }
 
-.quote_auth{
-    text-align: end;
+#qt_auth{
     font-weight: 900;
+    font-size: 24px;
+    text-align: right;
     align-self: flex-end;
 }
+.bottom_container{
+    margin: 80px;
+    padding: 20px;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
 
-.
+.text_container{
+    color: white;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottn {
+    border-color: white;
+    border-style: solid;
+    font-size: larger;
+    border-width: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+
+#arms{
+    font-weight: 900;
+    font-size: 24px;
+}
+
 #footer {
     display: flex;
     justify-content: center;
