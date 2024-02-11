@@ -1,4 +1,4 @@
-const reverseString = function(str) {
+function reverseString(str) {
     rts = "";
     u = 1;
     for(i = 0; i < str.length; i++){
@@ -10,3 +10,5 @@ const reverseString = function(str) {
 
 // Do not edit below this line
 module.exports = reverseString;
+
+console.log(reverseString("Hello, World!"));
