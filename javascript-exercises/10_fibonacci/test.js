@@ -1,5 +1,6 @@
 const fibonacci = function(num) {
-    for (i = num; i < num.lengh; i--){
+    let n = 1
+    for (i = num; i = 1; i--){
         // answer = 1 1 2 3
         // answer = 1 + 0, 1 + 1, 1 + 2, 2 + 3, 3 + 5
         // F(n) = F(n-1) + F(n-2)
@@ -8,5 +9,4 @@ const fibonacci = function(num) {
     return n
 };
 
-// Do not edit below this line
-module.exports = fibonacci;
+console.log(fibonacci(25))
