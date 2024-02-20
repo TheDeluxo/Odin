@@ -35,6 +35,29 @@ div.style.textAlign = "center";
 
 container.appendChild(div);
 
+btn.addEventListener('click', function (e) {
+    console.log(e);
+});
+
+btn.addEventListener('click', function (e) {
+    console.log(e.target);
+});
+
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+});
+
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
+
 console.log(para)
 console.log(head3)
 console.log(div)
