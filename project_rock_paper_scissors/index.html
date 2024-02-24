@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <button id="btn" onclick="runGamae()">Kur</button>
-    <br><br><br><br>
 
-    <button id="btn1">Rock</button><br>
-    <button id="btn2">Paper</button><br>
-    <button id="btn3">Scissors</button><br>
+    <br><br>
+    <h1>Rock, Paper, Scissors.</h1>
+    <h2>The first party that reaches 5 points wins the game!</h2>
+    <br><br>
 
+    <div id="buttons">
+        <button class="button" id="btn1">Rock</button>
+        <button class="button" id="btn2">Paper</button>
+        <button class="button" id="btn3">Scissors</button>
+    </div>
+    
+
+    <div id="results">
+        <div id="board">
+            <div>
+                <h3 class="current" id="you"></h3>
+                <h3 class="current" id="pc"></h3>
+            </div>
+            <div>
+                <h3 class="current" id="score-you"></h3>
+                <h3 class="current" id="score-pc"></h3>
+            </div>
+        </div>
+        
+        <h2 id="result"></h2>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

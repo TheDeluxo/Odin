@@ -11,33 +11,85 @@ function getPlayerChoice(){
     return hum.toLocaleLowerCase();
 }
 
-function runGamae(){
-    var pc = getComputerChoice();
-    var hum = getPlayerChoice();
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+
+btn1.addEventListener("click", runGamae)
+btn2.addEventListener("click", runGamae)
+btn3.addEventListener("click", runGamae)
+
+let result = document.getElementById("result");
+let you = document.getElementById("you")
+let PC = document.getElementById("pc")
+
+let scoreYou = document.getElementById("score-you")
+let scorePC = document.getElementById("score-pc")
+let youScore = 0
+let pcScore = 0
+scorePC.innerText = 0  + " points"
+scoreYou.innerText = 0 + " points"
+
+function runGamae(e){
+    let pc = getComputerChoice();
+    // var hum = getPlayerChoice();
+    let hum = e.target.innerText.toLocaleLowerCase()
     if (pc === hum){
-        console.log(`It's a tie: you had ${hum} and pc's choice was ${pc}`)
+        result.innerText = `It's a tie: you had ${hum} and pc's choice was ${pc}`
+        you.innerText = "You: " + hum
+        PC.innerText = "PC: " + pc
     }else if(pc === "paper" && hum === "rock"){
-        console.log(`pc wins, because ${pc} beats ${hum}`)
+        result.innerText = `PC wins this round, because ${pc} beats ${hum}`
+        you.innerText = "You: " + hum
+        PC.innerText = "PC: " + pc
+        pcScore += 1
+        scorePC.innerText = pcScore + " points"
     }else if(pc === "rock" && hum === "paper"){
-        console.log(`pc wins, because ${hum} beats ${pc}`)
+        result.innerText = `You win this round, because ${hum} beats ${pc}`
+        you.innerText = "You: " + hum
+        PC.innerText = "PC: " + pc
+        youScore += 1
+        scoreYou.innerText = youScore + " points"
     }else if(pc === "rock" && hum === "scissors"){
-        console.log(`pc wins, because ${pc} beats ${hum}`)
+        result.innerText = `PC wins this round, because ${pc} beats ${hum}`
+        you.innerText = "You: " + hum
+        PC.innerText = "PC: " + pc
+        pcScore += 1
+        scorePC.innerText = pcScore + " points"
     }else if(pc === "scissors" && hum === "rock"){
-        console.log(`pc wins, because ${hum} beats ${pc}`)
+        result.innerText = `You win this round, because ${hum} beats ${pc}`
+        you.innerText = "You: " + hum
+        PC.innerText = "PC: " + pc
+        youScore += 1
+        scoreYou.innerText = youScore + " points"
     }else if(pc === "scissors" && hum === "paper"){
-        console.log(`pc wins, because ${pc} beats ${hum}`)
+        result.innerText = `PC wins this round, because ${pc} beats ${hum}`
+        you.innerText = "You: " + hum
+        PC.innerText = "PC: " + pc
+        pcScore += 1
+        scorePC.innerText = pcScore + " points"
     }else if(pc === "paper" && hum === "scissors"){
-        console.log(`pc wins, because ${hum} beats ${pc}`)
-    }else if(pc === "scissors" && hum === "rock"){
-        console.log(`pc wins, because ${pc} beats ${hum}`)
-    }else if(pc === "rock" && hum === "scissors"){
-        console.log(`pc wins, because ${hum} beats ${pc}`)    
-    }else{
-        console.log("Something is missing or wrong word!")
+        result.innerText = `You win this round, because ${hum} beats ${pc}`
+        you.innerText = "You: " + hum
+        PC.innerText = "PC: " + pc
+        youScore += 1
+        scoreYou.innerText = youScore + " points"
+    }
+    if (youScore === 5){
+        alert("You are voctorious!")
+        location.reload();
+    }else if(pcScore === 5){
+        alert("The PC beats you this time!")
+        location.reload();
     }
 }
 
-
+// paper - rock
+// rock - paper
+// rock - scissors
+// scissors - rock
+// paper - scissors
+// scissors - paper
 
 // paper > rock
 // rock > scissors
