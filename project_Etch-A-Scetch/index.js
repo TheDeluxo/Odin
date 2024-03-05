@@ -35,14 +35,16 @@ function boardSet(){
             let newDiv = document.createElement("div")
             newDiv.id = "divRow" + i;
             newDiv.className = "cell"
-            // newDiv.style.width = (size * (size / 4)) + "px";
-            // newDiv.style.height = (size * (size / 4)) + "px";
-            newDiv.style.width = "60px";
-            newDiv.style.height = "60px";
+            newDiv.style.width = (size + (size / 4)) + "px";
+            newDiv.style.height = (size + (size / 4)) + "px";
+            // newDiv.style.width = "60px";
+            // newDiv.style.height = "60px";
+            // newDiv.style.width = "fit-content";
+            // newDiv.style.height = "fit-content";
             // newDiv.style.width = size / 2 + "px";
             // newDiv.style.height = size / 2 + "px";
-            container.style.width = (size * size) / 2 + "px";
-            container.style.height = (size * size) / 2 + "px";
+            // container.style.width = (size * size) / 2 + "px";
+            // container.style.height = (size * size) / 2 + "px";
             div.insertBefore(newDiv, null);
         }
     }
